@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body style="background-color: gray;">
+    <div style="text-align: center; margin-top: 10%; background-color: gray; color: rgb(110, 51, 8); font-size: larger;">
+        <div>
+            <h2>KODLUYORUZ!</h2>
+        </div>
+        <div>
+            <p>Merhaba! <span id="name"></span>! Hoşgeldin</p>
+        </div>
+        <div>
+            <p id="time"></p>
+        </div>
+        <div>
+            <p>tarihinde Kodluyoruz Front End Development Patikası'nın Javascript </p>
+        </div>
+        <div>
+            <p>bölümü 1. Ödevindesiniz.</p>
+        </div>
+        
+        
+        <script>
+            //         // show();
+            //         // function show() {
+            //         //     let x = Math.round(9.6);
+            //         //     let y = Math.round(9.1);
+            //         //     let z = Math.ceil(9.8);
+            //         //     let t = Math.floor(9.1);
+            //         function fuat(){
+            //         let x= new Date();
+            // x.setDate("11");
+            //             document.getElementById("result").innerHTML =x
+            //             }
+            //             fuat()
+            //         // "x "+"="+x+"<br>
+            //         //     "y "+"="+y+"<br>"+"+
+            //         //     "z "+"="+z+"<br>"+
+            //         //     "t "+"="+t
+            //         //  }
+            
+function name(){
+    document.getElementById("name").innerHTML=prompt('lütfen adınızı giriniz!!').toLocaleUpperCase()
+    function time(){
+        let x= new Date();
+        let days=["pazar","pazartesi","salı","çarsamba","perşembe","cuma","cumartesi"]
+        let y=x.getHours()+": "+ x.getMinutes()+": "+x.getSeconds()+": "+days[x.getDay()];
+         document.getElementById("time").innerHTML=y
+    }
+    time();   
+}
+   name();
+    
+           
+        </script>
+    </div>
+</body>
+
+</html>
